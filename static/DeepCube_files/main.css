@@ -1,0 +1,166 @@
+body{
+	background-color: aliceblue;
+	width: 60%;
+	position: absolute;
+	margin-left: -100px;
+}
+.container-left {
+	width: 1040px;
+	height: auto;
+	position: absolute;
+	/* border: #000000 1px solid; */
+	
+}
+.container-right{
+	width: 500px;
+	height: 500px;
+	position: relative;
+	margin-right: -700px;
+	/* border: #000000 1px solid; */
+
+}
+.container-right .right-inside{
+	margin-top: 179px;
+	margin-left: -100px;
+}
+.container-right li{
+	list-style: none;
+	margin: 10px;
+}
+
+.container-right li input{
+	height: 50px;
+	width: 300px;
+}
+.container-right #tijiao{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.cube_container {
+	Margin:auto;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	perspective: 1000px;
+}
+
+
+#cube_div {
+	margin-top: 60px;
+	padding-top: 0;
+	height: 410px;
+	width: 480px;
+	background-color:rgba(255, 255, 255, .3);
+	border-radius: 70%;
+}
+#cube_div .cube_container #cube{
+	margin:60px auto;
+	padding: 0;
+	
+}
+
+#cube {  
+	/*魔方中间面 */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+}
+/* 魔方边框 */
+#cube figure {
+	margin: 0;
+	width: 200px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	border: 1px solid black;
+	opacity:1.0;
+	background-color: #000000;
+}
+
+.sticker {
+	width: 33.3%;
+	height: 33.3%;
+	background-color: #000000;
+	border: 2px solid black;
+	float: left;
+	text-align: center;
+	font-size: larger;
+	
+}
+/* 以下是魔方各面平面 */
+#cube .front {
+	transform: rotateY( 0deg) translateZ(100px);
+}
+
+#cube .back {
+	transform: rotateX( 180deg) translateZ(100px);
+}
+
+#cube .right {
+	transform: rotateY( 90deg) translateZ(100px);
+}
+
+#cube .left {
+	transform: rotateY( -90deg) translateZ(100px);
+}
+
+#cube .top {
+	transform: rotateX( 90deg) translateZ(100px);
+}
+
+#cube .bottom {
+	transform: rotateX( -90deg) translateZ(100px);
+}
+
+button {
+	font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    height: 4rem;
+    width: 10rem;
+  border: 1px solid #0066cc;
+  background-color: #00ccb1;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+button:hover {
+  border: 1px solid #0099cc;
+  background-color: #00ccb1;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
+#program_container #solution_container{
+	margin:30px auto;
+	padding-top: 30px;
+
+	height: 100px;
+	width: 750px;
+}
+#program_container #solution_container #solution_text{
+margin: 20px auto;
+}
+
+
+/* scramble和solve的div层 */
+#button_container {
+	width: 555px;
+	height: 60px;
+	margin: 0 auto;
+}
+#scramble,#solve{
+margin-left: 25px;
+}
+
